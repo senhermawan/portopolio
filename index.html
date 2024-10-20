@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      .main_container {
+        scroll-snap-type: y proximity;
+        display: flex;
+        flex-flow: column nowrap;
+        overflow: auto;
+        scroll-behavior: smooth;
+        flex: none;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .separator {
+        margin: 0;
+      }
+
+      .main_container>div {
+        display: flex;
+        flex-flow: column nowrap;
+        scroll-snap-align: center;
+        flex: none;
+      }
+
+      .pageone {
+        background-image: url("api.png");
+        width: 100%;
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .pageone_textbox {
+        background-color: #dddddd99;
+        width: 45%;
+        height: 100vh;
+        padding-inline: 8rem;
+        padding-block: 40vh;
+      }
+      .pageone_textbox>h1 {
+        margin-bottom: -1rem;
+      }
+      
+      .secondpage {
+        background-color: rgb(20, 20, 20);
+        width: 100%;
+        height: 100vh;
+      }
+
+      .secondpage_textbox {}
+
+      .thirdpage {
+        background-color: rgb(194, 194, 194);
+        width: 100%;
+        min-height: 100vh;
+      }
+      .fourthpage{
+        min-height: 100vh;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+
+      }
+      .footer{
+        min-height: 5vh;
+        background-color: rgb(194, 194, 194);
+        width: 100%;
+        display: flex;
+      }
+      .footer>h3{
+        align-self: center;
+        color: #222;
+
+        font-family: 'Teko', sans-serif;
+      }
+      h1 {
+        font-family: 'Teko', sans-serif;
+        margin: 0;
+      }
+      h2{
+        color: #dfdfdf;
+        font-family: 'Teko', sans-serif;
+        margin: 0;
+      }
+      .white {
+        color: white;
+      }
+      td
+      {
+        padding: 0.5rem;
+      }
+      .center
+      {
+        align-self: center;
+      }
+      .scorllindicator {
+        top: 0;
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 8px;
+        background: #222;
+      }
+
+      /* The progress bar (scroll indicator) */
+      .progresindicatorbar {
+        height: 6px;
+        background: #ccc;
+        width: 0%;
+      }
+      .horizontal_box{
+        display: flex;
+        flex-flow: row nowrap;
+        flex: none;
+
+        align-self: center;
+      }
+      .record_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        grid-auto-rows: minmax(100px, auto);
+      }
+      .record_entry{
+        padding: 5px;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: none;
+      }
+      .record_entry>h4{
+        align-self: center;
+        font-family: 'Teko', sans-serif;
+        margin: 0;
+      }
+      .record-image-holder{
+
+        border: #222 0.25rem dashed;
+        width: 24rem;
+        height: 13.5rem;
+        background-color: slategray;
+      }
+      
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://shhh7612.github.io/plugins/widget.js"></script>
+    <title>Website</title>
+  </head>
+  <body>
+    <div class="main_container" dir="ltr">
+      <div class='pageone'>
+        <div class="pageone_textbox">
+          <h1 class="display-1"> Protoype CODE : NES </h1>
+          <hr width="40%" size="3" class="separator">
+          <h1 class="display-6"> Portopolio Page </h1>
+        </div>
+      </div>
+      <div class='secondpage'>
+        
+        <h1 class="display-1 white center">Prototype Information</h1>
+        <div class="horizontal_box">
+
+        <img src="bio.png" class="center" style="width:12rem;height: auto;">
+        <table class="center">
+            <tr>
+                <td>
+                    <h2>CODE NAME</h2>
+                </td>
+                <td>
+                    <h2>
+                      &nbsp;: NES
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        IDENTIFIER
+                    </h2>
+                </td>
+                <td>    
+                    <h2>
+                      &nbsp;:  SEN SEN HERMAWAN 
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        DATE OF COMMISSION
+                    </h2>
+                </td>
+                <td>
+                    <h2>
+                      &nbsp;: 23 SEPTEMBER
+                    </h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+      </div>
+      <div class='thirdpage'>
+        <h1 class="display-1 center">Protoype record</h1>
+        <div class="record_grid center">
+          <div class="record_entry">
+            <div class="record-image-holder">placeholder</div>
+            <h4>Lorem ipsum dolor sit amet</h4>
+          </div>
+          <div class="record_entry">
+            <div class="record-image-holder">placeholder</div>
+            <h4>Lorem ipsum dolor sit amet</h4>
+          </div>
+          <div class="record_entry">
+            <div class="record-image-holder">placeholder</div>
+            <h4>Lorem ipsum dolor sit amet</h4>
+          </div>
+          <div class="record_entry">
+            <div class="record-image-holder">placeholder</div>
+            <h4>Lorem ipsum dolor sit amet</h4>
+          </div>
+          <div class="record_entry">
+            <div class="record-image-holder">placeholder</div>
+            <h4>Lorem ipsum dolor sit amet</h4>
+          </div>
+          <div class="record_entry">
+            <div class="record-image-holder">placeholder</div>
+            <h4>Lorem ipsum dolor sit amet</h4>
+          </div>
+        </div>
+      </div>
+      <div class='fourthpage'>
+        <div style="min-height: 95vh ;">
+
+        </div>
+        <div class='footer'>
+          <h3>
+            &copy; Sen sen "nes" hermawan 2023
+          </h3>
+        </div>
+      </div>
+      
+      
+    </div>
+  </body>
+</html>
